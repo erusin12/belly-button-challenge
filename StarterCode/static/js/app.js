@@ -12,8 +12,9 @@ function buildMetadata(sample) {
       PANEL.html("");
 
       // Append new tags for each key-value in the metadata
-      for (let [key, value] of Object.entries(result)) {
-        PANEL.append("p").text(`${key.toUpperCase()}: ${value}`);
+       for (let [key, value] of Object.entries(result)) {
+       PANEL.append("p").text(`${key.toUpperCase()}: ${value}`);
+		
       };
     });
 }
